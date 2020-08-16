@@ -6,4 +6,5 @@
     <string name="hello_blank_fragment">Hello blank fragment</string>
     <string name="fragment_android_title">Android</string>
     <string name="feagment_android_content">Android是一个移动端操作系统\n可以使用Java,Kotllin,C/C++语言进行开发</string>
+    <string name="fragment_java_content">一个新的Fragment</string>
 </resources>
