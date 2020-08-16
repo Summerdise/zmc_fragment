@@ -28,6 +28,18 @@ public class MainActivity extends FragmentActivity {
                 transaction.commit();
             }
         });
+
+        Button javaButton = findViewById(R.id.button2);
+        javaButton.setOnClickListener(new View.OnClickListener() {
+            @Override
+            public void onClick(View view) {
+                FragmentManager manager = getSupportFragmentManager();
+                FragmentTransaction transaction = manager.beginTransaction();
+                Fragment fragmentJava = new Fragment_Java();
+                transaction.add(R.id.fragment_container,fragmentJava);
+                transaction.commit();
+            }
+        });
     }
 
 
