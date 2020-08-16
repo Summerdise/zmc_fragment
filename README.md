@@ -1,9 +1,9 @@
 # zmc_fragment
 ## 截图
-
-![image-20200817003355173](C:\Users\admin\Desktop\初始.png)
-
-![image-20200817003329969](C:\Users\admin\AppData\Roaming\Typora\typora-user-images\image-20200817003329969.png)
-
-![image-20200817003347677](C:\Users\admin\AppData\Roaming\Typora\typora-user-images\image-20200817003347677.png)
+初始画面：
+![image-origin](https://github.com/Summerdise/zmc_fragment/blob/master/app/src/main/res/image/origin.png)
+安卓选项画面
+![image-android](https://github.com/Summerdise/zmc_fragment/blob/master/app/src/main/res/image/android.png)
+Java选项画面
+![image-java](https://github.com/Summerdise/zmc_fragment/blob/master/app/src/main/res/image/java.png)
 
