@@ -10,7 +10,7 @@ import android.os.Bundle;
 import android.view.View;
 import android.widget.Button;
 
-public class MainActivity extends FragmentActivity {
+public class MainActivity extends AppCompatActivity {
 
     @Override
     protected void onCreate(Bundle savedInstanceState) {
@@ -21,11 +21,8 @@ public class MainActivity extends FragmentActivity {
         androidButton.setOnClickListener(new View.OnClickListener() {
             @Override
             public void onClick(View view) {
-                FragmentManager manager = getSupportFragmentManager();
-                FragmentTransaction transaction = manager.beginTransaction();
                 Fragment fragmentAndroid = new Fragment_android();
-                transaction.add(R.id.fragment_container,fragmentAndroid);
-                transaction.commit();
+                replaceFragment(fragmentAndroid);
             }
         });
 
@@ -33,27 +30,16 @@ public class MainActivity extends FragmentActivity {
         javaButton.setOnClickListener(new View.OnClickListener() {
             @Override
             public void onClick(View view) {
-                FragmentManager manager = getSupportFragmentManager();
-                FragmentTransaction transaction = manager.beginTransaction();
                 Fragment fragmentJava = new Fragment_Java();
-                transaction.add(R.id.fragment_container,fragmentJava);
-                transaction.commit();
+                replaceFragment(fragmentJava);
             }
         });
     }
 
-
-    private void addFragment(Fragment fragment, String tag) {
-
-        FragmentManager manager = getSupportFragmentManager();
-
-        FragmentTransaction transaction = manager.beginTransaction();
-
-        transaction.add(R.id.fragment_container, fragment, tag);
-
+    private void replaceFragment(Fragment fragment) {
+        FragmentTransaction transaction = getSupportFragmentManager().beginTransaction();
+        transaction.replace(R.id.fragment_container, fragment);
         transaction.commit();
-
     }
-
 
 }
